@@ -1,0 +1,12 @@
+insert $p isa person
+has first-name <FirstName>
+has last-name <LastName>
+has phone-number <PhoneNumber>
+has city <City>
+has age @long(<Age>)
+if (<FirstName> != "") do {
+has is-customer true;
+}
+else {
+has is-customer false;
+}
